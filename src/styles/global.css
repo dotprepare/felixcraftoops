@@ -42,6 +42,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css?family=Mali&display=swap');
+
+body {
+    font-family: Mali, sans-serif;
+}
 
 nav {
     margin: 10px auto;

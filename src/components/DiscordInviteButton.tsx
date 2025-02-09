@@ -46,7 +46,7 @@ const DiscordInviteButton: React.FC<DiscordInviteButtonProps> = ({ inviteUrl }) 
     <>
       <button 
         onClick={handleInvite}
-        className="btn btn-primary"
+        className="btn"
       >
         Join Discord
       </button>
