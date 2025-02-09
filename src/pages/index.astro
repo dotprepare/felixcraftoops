@@ -1,11 +1,74 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import DiscordInviteButton from '@/components/DiscordInviteButton'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
 ---
 
 <Layout>
-	<Welcome />
+	<!-- Hero -->
+	<div class="hero bg-base-200 min-h-screen" style="background:linear-gradient(rgb(0 0 0 / 0.6), rgb(0 0 0 / 0.4)), url(https://cdn.discordapp.com/attachments/1281655989434847365/1338043080057688064/pamgen.png?ex=67a9a539&is=67a853b9&hm=ad67fadb44155e3ce9e9472678712e09a45b720102adf1c50d2452301be55c77&    );background-size:cover;background-position:center center;background-repeat:no-repeat;">
+		<div class="hero-content text-center">
+			<div class="max-w-md">
+				<h1 class="text-5xl font-bold">FelixCraft Official</h1>
+					<p class="py-6">
+						เซิฟเวอร์โรลเพลไมค์คราฟ Bedrock และ Java ที่มีความสนุก ไม่เครียด
+					</p>
+				<DiscordInviteButton client:load inviteUrl="https://discord.gg/P6GFMUNA87" />
+			</div>
+		</div>
+		<div class="absolute bottom-0 mb-4 flex flex-col justify-center items-center space-y-4 cursor-pointer">
+			<p class="text-gray-400 text-sm"></p><i class="fad fa-chevron-double-down text-cyan-500 text-3xl animate-bounce"></i>
+		</div>
+	</div>
+
+	<!-- Content  -->
+	<div id="start-content" class="min-h-screen" id="ayooo">
+		<hr class="my-6 border-gray-200 dark:border-gray-700">
+		<div class="container mx-auto p-4">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-10">   
+			</a>
+				<!--]-->
+			</div>
+			<div class="w-full flex flex-row justify-center items-center"><ins class="adsbygoogle w-96 h-32" style="display:block;" data-ad-client="ca-pub-4072719831391840" data-ad-layout="in-article" data-analytics-uacct data-analytics-domain-name data-adsbygoogle-status data-ad-full-width-responsive="true"
+					data-v-101bfb4a></ins></div>
+			<div>
+				<div class="text-center">
+					<h1 class="text-3xl font-bold text-black dark:text-white"> FelixCraft Official </h1>
+					<p class="text-gray-400">เฟลิคซ์คราฟ ออฟฟิตเชี่ยว</p>
+				</div>
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 my-8">
+					<!--[-->
+					<div class="group p-4 relative cursor-pointer bg-white dark:bg-black rounded-md hover:scale-[1.03] transition-all duration-300 w-full">
+						<h1 class="text-2xl font-bold text-cyan-500 dark:text-cyan-400"><i class="fa-duotone fa-compass mr-2"></i> Discord</h1>
+						<p class="text-gray-400">เข้าเซิฟเวอร์ดิสคอสเฟลิคซ์กดได้ที่แถบด้านบน</p>
+					</div>
+					<div class="group p-4 relative cursor-pointer bg-white dark:bg-black rounded-md hover:scale-[1.03] transition-all duration-300 w-full">
+						<h1 class="text-2xl font-bold text-cyan-500 dark:text-cyan-400"><i class="fad fa-box mr-2"></i> Shop</h1>
+						<p class="text-gray-400">ร้านค้าเฟลิคซ์คราฟ สามารถกดไดที่แถบด้านบน</p>
+					</div>
+					<div class="group p-4 relative cursor-pointer bg-white dark:bg-black rounded-md hover:scale-[1.03] transition-all duration-300 w-full">
+						<h1 class="text-2xl font-bold text-cyan-500 dark:text-cyan-400"><i class="fad fa-book mr-2"></i> Forms</h1>
+						<p class="text-gray-400">ใบสมัครเข้า SMP FelixCraft สามารถกดไดที่แถบด้านบน</p>
+					</div>
+					<!--]-->
+				</div>
+			</div>
+			<div class="mt-12">
+				<div class="text-center">
+					<h1 class="text-3xl font-bold text-black dark:text-white">FelixCraft Official.</h1>
+					<p class="text-gray-400">ขอบคุณที่เข้ามาชมเว็บไซน์ของพวกเรา.</p>
+				</div>
+				<div class="flex flex-col justify-center items-center w-full">
+					<div class="flex flex-row flex-wrap justify-center items-center max-w-4xl gap-4 my-8">
+					</div>
+				</div>
+			</div>
+			<div class="w-full flex flex-row justify-center items-center mt-20"><ins class="adsbygoogle w-full h-32 mx-4" style="display:block;" data-ad-client="ca-pub-4072719831391840" data-ad-layout="In-feed" data-analytics-uacct data-analytics-domain-name data-adsbygoogle-status data-ad-full-width-responsive="true"
+					data-v-101bfb4a></ins></div>
+		</div>
+	</div>
 </Layout>

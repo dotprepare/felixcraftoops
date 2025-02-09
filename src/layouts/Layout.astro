@@ -1,5 +1,12 @@
 ---
 import '@/styles/global.css'
+import '@/styles/loading.css'
+
+import Navbar from '@/components/Navbar.astro'
+import Footer from '@/components/Footer.astro'
+
+import {Toaster} from 'react-hot-toast'
+
 ---
 
 <!doctype html>
@@ -9,10 +16,24 @@ import '@/styles/global.css'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1281655989434847365/1338055116363923577/FelixCraft_Logo_.png?ex=67a9b06f&is=67a85eef&hm=3357ab6a942ac240dfdf7b99812c5d63399aa6da49d210f8ccc44a4ed6bd2168&" type="image/x-icon">
+		<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+		<link href="https://kit-pro.fontawesome.com/releases/v6.4.0/css/pro.min.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<title>FelixCraft Official - Powered by .prepare (NiceKun)</title>
 	</head>
 	<body>
+		<Navbar />
+		<Toaster
+			position="top-center"
+			reverseOrder={false}
+		/>
 		<slot />
+		<Footer />
 	</body>
 </html>
 
