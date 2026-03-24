@@ -5,8 +5,6 @@ import react from '@astrojs/react';
 
 import tailwindcss from '@tailwindcss/vite';
 
-import netlify from '@astrojs/netlify';
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -17,11 +15,7 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  output: 'server',
-  adapter: netlify({
-    edgeMiddleware: true,
-    cacheOnDemandPages: true,
-  }),
+  output: 'static',
   image: {
     domains: ['cdn.discordapp.com'],
   },
